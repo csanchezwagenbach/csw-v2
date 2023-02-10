@@ -4,19 +4,16 @@ function Navigation({ currentPage, handlePageChange}) {
     return (
 
 <div className="container-fluid">
-                <a className="navbar-brand" href="#home"
+                <a className="navbar-brand text-danger" href="#home"
                 onClick={() => handlePageChange('Home')}>C.S.W.</a>
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className="collapse navbar-collapse" id="navbarNav">
-                    <ul className="navbar-nav">
+                <div className="navbar" id="navbarNav">
+                    <ul className="nav">
                         <li className="nav-item">
-                            <a className="nav-link" aria-current="page" href="#Bio"
+                            <a className="nav-link text-success" aria-current="page" href="#Bio"
                             onClick={() => handlePageChange('Bio')}>Bio</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#Projects"
+                            <a className="nav-link text-dark" href="#Projects"
                             onClick={() => handlePageChange('Projects')}>Projects</a>
                         </li>
                     </ul>
