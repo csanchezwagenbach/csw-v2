@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import Navigation from './Navigation';
+import Home from './pages/Home';
 
 export default function Header() {
     const [currentPage, setCurrentPage] = useState('Home');
 
-    // const renderPage = () => {
-    //     if (currentPage === 'Home') {
-    //         return <Home />;
-    //     }
+    const renderPage = () => {
+        if (currentPage === 'Home') {
+            return <Home />;
+        }
     //     if (currentPage === 'Bio') {
     //         return <About />;
     //     }
@@ -15,16 +16,16 @@ export default function Header() {
     //         return <Projects />
     //     }
     //     return <Contact />
-    // };
+     };
 
     const handlePageChange = (page) => setCurrentPage(page);
 
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-warning">
+        <nav>
             <Navigation currentPage={currentPage}
                 handlePageChange={handlePageChange} /
             >
-            {/* {renderPage()} */}
+            {renderPage()}
         </nav>
     )
 }

@@ -1,0 +1,15 @@
+:root {
+    --navy: #324e71
+    --arsenal: Arsenal
+}
+
+.navigator {
+    background-color: var(--navy);
+}
+
+.home-card {
+    background-image: url(./assets/sophomoric.jpg);
+     background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+}
