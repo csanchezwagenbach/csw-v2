@@ -1,22 +1,31 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import React, { useState } from 'react';
+import Navigation from './Navigation';
 
-function NavigationHeader() {
+export default function Header() {
+    const [currentPage, setCurrentPage] = useState('Home');
+
+    const renderPage = () => {
+        if (currentPage === 'Home') {
+            return <Home />;
+        }
+        if (currentPage === 'Bio') {
+            return <About />;
+        }
+        if (currentPage === 'Projects') {
+            return <Projects />
+        }
+        return <Contact />
+    };
+
+    const handlePageChange = (page) => setCurrentPage(page);
+
     return (
-        <>
-            <Navbar bg="light" variant="light">
-                <Container>
-                    <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-                    <Nav className="me-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#features">Features</Nav.Link>
-                        <Nav.Link href="#pricing">Pricing</Nav.Link>
-                    </Nav>
-                </Container>
-            </Navbar>
-        </>
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <Navigation currentPage={currentPage}
+                handlePageChange={handlePageChange} /
+            >
+            {renderPage()}
+        </nav>
     )
 }
 
-export default NavigationHeader;

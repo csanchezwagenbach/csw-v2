@@ -1,16 +1,12 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { ThemeProvider } from 'react-bootstrap';
-import NavigationHeader from './components/Header';
+import Header from './components/Header';
 
 function App() {
   return (
-    <ThemeProvider
-      breakpoints={['l', 'm', 's']}
-    >
       <div>
-        <NavigationHeader />
+        <Header>
+        </Header>
       </div>
-    </ThemeProvider>
   );
 }
 
