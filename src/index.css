@@ -1,5 +1,14 @@
 :root {
-    --navy: #324e71
+    --navy: #324e71;
+    --teal: #95b2b8;
+}
+
+body {
+    background-color: var(--teal);
+}
+
+* {
+    font-family: 'Arsenal', sans-serif
 }
 
 .navigator {
@@ -8,7 +17,20 @@
 
 .home-card {
     background-image: url(./assets/sophomoric.jpg);
-     background-repeat: no-repeat;
+    background-repeat: no-repeat;
     /* background-attachment: fixed; */
     background-size: cover;
+}
+
+.greyed {
+    filter: grayscale(100%);
+    border-radius: 20px;
+    outline: solid var(--navy);
+}
+
+.greyed:hover {
+    filter: grayscale(0%);
+    border-radius: 20px;
+    outline: 0;
+    transform: translate(50px, 100px)
 }

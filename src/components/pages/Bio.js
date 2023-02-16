@@ -7,14 +7,14 @@ export default function Bio() {
     return (
         <div className="container-fluid my-1">
             <div className="row mb-1">
-                <h6 className="col-8">My design journey began at sixteen, in the drawing studio.
+                <h6 className="col-8"><em>My design journey began at sixteen, in the drawing studio.
                     Never adept at freehand, a straight edge and eraser liberated my pencil to explore perspective.
                     Programmatic expression evolved into a creative ethic that followed me into the classroom both as
-                    scholar and teacher, and culminates now in my exploits in software development.</h6>
-                <img src={avatar} className='img-fluid col-4' alt='Avatar photo at Paterson Falls'></img>
+                    scholar and teacher, and culminates now in my exploits in software development.</em></h6>
+                <img src={avatar} className='img-fluid  greyed col-4' alt='Avatar photo at Paterson Falls'></img>
 
             </div>
-            <p className="text-start">
+            <h8 className="text-start">
                 Since those sophomoric days in the studio, a number of experiences moulded both my professional ambition and aesthetic development. I spent three years appearing on stage with a <a href='https://www.shakespeareonthelawn.org/'>student theater group</a> while studying in Charlottesville. I graduated in 2016, and after some time spent <a href='https://www.peoplesworld.org/authors/colby-wagenbach/'>publishing online</a> , I landed in Washington, D.C., where I spent the next two years working at an <a href='https://www.kramers.com/'>independent bookstore</a> , <a href='https://www.zekescoffeedc.com/'>selling coffee</a> at Farmer's Markets around the District, conducting private tours throughout the capital's galleries, and taking up the study of French at the local <a href='https://www.francedc.org/index'>Alliance Francaise:</a> A time both productive and marvelous.
                 <br></br>
                 <br></br>
@@ -25,8 +25,8 @@ export default function Bio() {
                 <br></br>
                 <br></br>
                 I stayed with Lafayette Middle School for four years, from its opening year through to the first graduating class. Difficult as it was to leave teaching behind, I enrolled in a full stack web development boot camp with the aim of acquiring as many skills as I could in the shortest possible time. While algorithms, CMSs, SQL, and GraphQL thrill my ordered and mathy mind, front-end development captivates me. I've recently been working with React, Node.js, JavaScript (ES6+), Next.js, and TypeScript.
-            </p>
-            <img src={graduation} className='img-fluid' alt='Proud teachers at graduation'></img>
+            </h8>
+            <img src={graduation} className='img-fluid greyed mt-2' alt='Proud teachers at graduation'></img>
         </div>
     )
 }
