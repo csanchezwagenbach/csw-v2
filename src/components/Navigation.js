@@ -1,23 +1,24 @@
 import React from 'react';
+import logo from '../assets/logo.png';
 
 function Navigation({ currentPage, handlePageChange }) {
     return (
         <div className='navbar navbar-expand-lg navigator'>
             <div className="container-fluid">
-                <a className="navbar-brand text-danger" href="#home"
-                    onClick={() => handlePageChange('Home')}>C.S.W.</a>
+                <a className="navbar-brand text-white fw-bold" href="#home"
+                    onClick={() => handlePageChange('Home')}><img className='logo' src={logo}></img></a>
                 <div className="navbar" id="navbarNav">
                     <ul className="nav">
                         <li className="nav-item">
-                            <a className="nav-link text-success" aria-current="page" href="#Bio"
-                                onClick={() => handlePageChange('Bio')}>Bio</a>
+                            <a className="nav-link text-white fw-bold" aria-current="page" href="#Bio"
+                                onClick={() => handlePageChange('Bio')}>About Colby</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link text-dark" href="#Projects"
+                            <a className="nav-link text-white fw-bold" href="#Projects"
                                 onClick={() => handlePageChange('Projects')}>Projects</a>
                         </li>
                         <li className="nav-item">
-                            <a className='nav-link' href='#Contact'
+                            <a className='nav-link text-white fw-bold' href='#Contact'
                                 onClick={() => handlePageChange('Contact')}>Contact</a>
                         </li>
                     </ul>
