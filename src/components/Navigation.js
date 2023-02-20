@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../assets/logo.png';
+import resume from '../assets/cswResumev2.pdf';
 
 function Navigation({ currentPage, handlePageChange }) {
     return (
@@ -20,6 +21,9 @@ function Navigation({ currentPage, handlePageChange }) {
                         <li className="nav-item">
                             <a className='nav-link text-white fw-bold' href='#Contact'
                                 onClick={() => handlePageChange('Contact')}>Contact</a>
+                        </li>
+                        <li className='nav-item'>
+                            <a className='nav-link text-white fw-bold' href={resume}>Resume</a>
                         </li>
                     </ul>
                 </div>

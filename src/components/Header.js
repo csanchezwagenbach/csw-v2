@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Navigation from './Navigation';
 import Home from './pages/Home';
 import Bio from './pages/Bio'
+import Projects from './pages/Projects';
 
 export default function Header() {
     const [currentPage, setCurrentPage] = useState('Home');
@@ -13,9 +14,9 @@ export default function Header() {
         if (currentPage === 'Bio') {
             return <Bio />;
         }
-    //     if (currentPage === 'Projects') {
-    //         return <Projects />
-    //     }
+        if (currentPage === 'Projects') {
+            return <Projects />
+        }
     //     return <Contact />
      };
 
