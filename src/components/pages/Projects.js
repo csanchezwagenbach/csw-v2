@@ -1,4 +1,6 @@
 import React from 'react';
+import github from '../../assets/github.png'
+import link from '../../assets/link.png'
 
 export default function Projects () {
 
@@ -55,6 +57,7 @@ export default function Projects () {
     return (
         <div>
         <p>Some projects and work I've completed . . .</p>
+        <div className='row'>
         {projects.map((project) => {
             return (
         <div className='card col-12 col-md-3 col-lg-4' key={project.id}>
@@ -62,10 +65,13 @@ export default function Projects () {
                 <h5 className='card-title'>{project.title}</h5>
                 <h6 className='card-subtitle mb-2 text-muted'>{project.tags}</h6>
                 <p className='card-text'>{project.description}</p>
+                <a href={project.repository} className='card-link'><img src={github} className='logo' alt='link to repo'></img></a>
+                <a href={project.url} className='card-link'><img src={link} className='logo' alt='link to app'></img></a>
             </div>
         </div>
             )
         })}
+        </div>
         </div>
     )
 }
