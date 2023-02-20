@@ -4,6 +4,7 @@ export default function Projects () {
 
     const projects = [
         {
+            id: '1',
             title: "Chef-GPT",
             repository: "https://github.com/csanchezwagenbach/chef-gpt",
             url: "https://boiling-springs-79959.herokuapp.com/login",
@@ -11,6 +12,7 @@ export default function Projects () {
             tags: "OpenAI API, MySQL, Express, Node.js"
         },
         {
+            id: "2",
             title: "Applied",
             repository: "https://github.com/csanchezwagenbach/applied-v1",
             url: "https://fathomless-brushlands-43089.herokuapp.com/",
@@ -18,6 +20,7 @@ export default function Projects () {
             tags: "MERN, CMS, GraphQL"
         },
         {
+            id: "3",
             title: "CMS Sample: Blog",
             repository: "https://github.com/csanchezwagenbach/tech-blog-mvc-sample",
             url: "https://floating-springs-81705.herokuapp.com/",
@@ -25,6 +28,7 @@ export default function Projects () {
             tags: "CMS, MySQL, Express, Node.js"
         },
         {
+            id: "4",
             title: "Employee-Tracker CMS",
             repository: "https://github.com/csanchezwagenbach/employee-tracker-cms",
             url: "https://github.com/csanchezwagenbach/employee-tracker-cms",
@@ -32,6 +36,7 @@ export default function Projects () {
             tags: "CLI, CMS, MySQL, Node.js"
         },
         {
+            id: "5",
             title: "Sample Social Network API",
             repository: "https://github.com/csanchezwagenbach/sample-social-network-api",
             url: "https://github.com/csanchezwagenbach/sample-social-network-api",
@@ -39,6 +44,7 @@ export default function Projects () {
             tags: "REST API, Express, MongoDB, Mongoose"
         },
         {
+            id: "6",
             title: "Sample E-Commerce API",
             repository: "https://github.com/csanchezwagenbach/e-commerce-back-end-sample",
             url: "https://github.com/csanchezwagenbach/e-commerce-back-end-sample",
@@ -48,7 +54,18 @@ export default function Projects () {
     ]
     return (
         <div>
-        <p>Here we are now, guv'nuh</p>
+        <p>Some projects and work I've completed . . .</p>
+        {projects.map((project) => {
+            return (
+        <div className='card col-12 col-md-3 col-lg-4' key={project.id}>
+            <div className="card-body">
+                <h5 className='card-title'>{project.title}</h5>
+                <h6 className='card-subtitle mb-2 text-muted'>{project.tags}</h6>
+                <p className='card-text'>{project.description}</p>
+            </div>
+        </div>
+            )
+        })}
         </div>
     )
 }
