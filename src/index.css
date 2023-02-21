@@ -53,3 +53,9 @@ body {
 .contact {
     height: 50%;
 }
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}

@@ -12,7 +12,7 @@ function Navigation({ currentPage, handlePageChange }) {
                     <ul className="nav">
                         <li className="nav-item">
                             <a className="nav-link text-white fw-bold" aria-current="page" href="#Bio"
-                                onClick={() => handlePageChange('Bio')}>About Colby</a>
+                                onClick={() => handlePageChange('Bio')}>Bio</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link text-white fw-bold" href="#Projects"

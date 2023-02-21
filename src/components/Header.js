@@ -24,7 +24,7 @@ export default function Header() {
     const handlePageChange = (page) => setCurrentPage(page);
 
     return (
-        <nav>
+        <nav className='wrapper'>
             <Navigation currentPage={currentPage}
                 handlePageChange={handlePageChange} /
             >
