@@ -56,11 +56,10 @@ export default function Projects () {
     ]
     return (
         <div>
-        <p>Some projects and work I've completed . . .</p>
-        <div className='row'>
+        <div className='row mx-2 justify-content-evenly'>
         {projects.map((project) => {
             return (
-        <div className='card col-12 col-md-3 col-lg-4' key={project.id}>
+        <div className='card col-12 col-md-4 col-lg-4 mx-2 my-3' key={project.id}>
             <div className="card-body">
                 <h5 className='card-title'>{project.title}</h5>
                 <h6 className='card-subtitle mb-2 text-muted'>{project.tags}</h6>
