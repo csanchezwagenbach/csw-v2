@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/csw-v2/static/css/main.5877a9f3.css",
+    "main.js": "/csw-v2/static/js/main.2beee120.js",
+    "static/media/sophomoric.jpg": "/csw-v2/static/media/sophomoric.5f0b50eb2324673f6f02.jpg",
+    "static/media/sophomoric2.jpg": "/csw-v2/static/media/sophomoric2.c1fb374d6a6743a14a5d.jpg",
+    "static/media/sophomoric3.jpg": "/csw-v2/static/media/sophomoric3.3e62a14afe246eb7f834.jpg",
+    "static/media/graduation.jpg": "/csw-v2/static/media/graduation.9d1597d1fc80399cc22a.jpg",
+    "static/media/avatar_portfolio.JPEG": "/csw-v2/static/media/avatar_portfolio.49ddc3423c6608b97cae.JPEG",
+    "static/media/cswResumev2.pdf": "/csw-v2/static/media/cswResumev2.ba715955d416133de0aa.pdf",
+    "static/media/logo.png": "/csw-v2/static/media/logo.0aef6196c7f04b26b8b1.png",
+    "static/media/gitlogo.png": "/csw-v2/static/media/gitlogo.3068a8a9df4c0ab4cf99.png",
+    "static/media/twitlogo.png": "/csw-v2/static/media/twitlogo.b02b54be7e5c15e0dba2.png",
+    "static/media/linkedlogo.png": "/csw-v2/static/media/linkedlogo.079e15447c78d36e1677.png",
+    "index.html": "/csw-v2/index.html",
+    "main.5877a9f3.css.map": "/csw-v2/static/css/main.5877a9f3.css.map",
+    "main.2beee120.js.map": "/csw-v2/static/js/main.2beee120.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5877a9f3.css",
+    "static/js/main.2beee120.js"
+  ]
+}
