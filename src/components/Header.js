@@ -3,6 +3,7 @@ import Navigation from './Navigation';
 import Home from './pages/Home';
 import Bio from './pages/Bio'
 import Projects from './pages/Projects';
+import Contact from './pages/Contact';
 
 export default function Header() {
     const [currentPage, setCurrentPage] = useState('Home');
@@ -17,7 +18,7 @@ export default function Header() {
         if (currentPage === 'Projects') {
             return <Projects />
         }
-    //     return <Contact />
+        return <Contact />
      };
 
     const handlePageChange = (page) => setCurrentPage(page);
