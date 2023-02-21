@@ -7,7 +7,7 @@ function Navigation({ currentPage, handlePageChange }) {
         <div className='navbar navbar-expand-lg navigator'>
             <div className="container-fluid">
                 <a className="navbar-brand text-white fw-bold" href="#home"
-                    onClick={() => handlePageChange('Home')}><img className='logo' src={logo}></img></a>
+                    onClick={() => handlePageChange('Home')}><img className='logo' src={logo} alt='logo'></img></a>
                 <div className="navbar" id="navbarNav">
                     <ul className="nav">
                         <li className="nav-item">

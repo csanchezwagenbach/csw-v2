@@ -19,7 +19,6 @@ body {
 .home-card {
     background-image: url(./assets/sophomoric.jpg);
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
     background-size: cover;
 }
 
